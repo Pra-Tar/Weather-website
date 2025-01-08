@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
+import './App.css'
+import SearchView from './components/SearchView';
+import DetailedView from './components/DetailedView';
+import LoadingInitial from './components/LoadingInitial';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App=()=>{
+  const [results, setResults]= useState([])
+  const [isLoading, setIsLoading]= useState(true)
+
+  useEffect(()=>{
+    const timer=setTimeout(()=>{
+      setIsLoading(false)
+    },2000)
+
+    return ()=>clearTimeout(timer)
+  },[])
+
+  if(isLoading)
+    return(
+      <LoadingInitial/>
+    )
+
+  else{
+  return(
+    <div className='body'>
+      
+        <SearchView setResults={setResults}/>
+        <DetailedView results={results}/> 
+      
     </div>
-  );
+  )
+}
 }
 
 export default App;

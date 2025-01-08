@@ -1,0 +1,45 @@
+.search-view{
+    flex: 1;
+    height: 100vh;
+  }
+  
+  
+  .detailed-view{
+    flex: 2;
+    height: 100vh;
+    background-color: var(--LightGrey);
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .search-bar{
+    display: flex;
+    align-items: center;
+    background-color: var(--LightGrey);
+    justify-content: space-between;
+    width: max-content;
+    padding: 4px 10px;
+    margin: 26px auto;
+    border-radius: 50vh;
+  }
+  
+  
+  .search-bar input{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: monospace;
+  }
+  
+  
+  .search-bar .search-icon{
+    cursor: pointer;
+    stroke:var(--LightVoilet);
+    transition: stroke 0.3s ease;
+  }  
+  
+  .search-bar .search-icon:hover{
+    stroke: var(--DarkVoilet);
+  }
+  

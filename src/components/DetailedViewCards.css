@@ -1,0 +1,37 @@
+.detailed-view-cards{
+    margin: 0 36px;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(3, 0.6fr);
+    grid-template-columns: repeat(3, 0.6fr);
+    gap: 30px;
+    padding: 10px;
+    grid-auto-flow: column;
+  }
+  
+  
+  .detailed-view-cards .card{
+    background-color: var(--DarkVoilet);
+    border-radius: 20px;
+    margin: 0;
+    padding: 16px;
+    height: 130px;
+  }
+  
+  
+  
+  
+  .detailed-view-cards .card .detail-2{
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 8px 0;
+  }
+  
+  
+  .detailed-view-cards .card .detail-1, .detailed-view-cards .card .detail-3{
+    color: var(--LightGrey);
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  

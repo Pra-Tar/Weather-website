@@ -1,0 +1,20 @@
+.detailed-view-cards .loading{
+    background-color: var(--DarkVoilet);
+    border-radius: 20px;
+    margin: 0;
+    padding: 16px;
+    height: 100px;
+    animation: shimmer 2s linear .1s infinite;
+}
+
+@keyframes shimmer {
+    0%{
+    background-color: var(--LightVoilet);
+    }
+    50%{
+    background-color: var(--DarkVoilet);
+    }
+    100%{
+    background-color: var(--LightVoilet);
+    }
+}

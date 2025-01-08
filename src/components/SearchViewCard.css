@@ -1,0 +1,67 @@
+  
+  .search-view-card{
+    width: max-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+  }
+  
+  
+  .search-view-card img{
+    object-fit: cover;
+    height: 120px;
+    width: 200px;
+  }
+  
+  
+  .search-view-card .temp{
+    font-size: 3rem;
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  
+  .search-view-card .desc{
+    margin-top: 4px;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+  
+  
+  .search-view-card .hor-line{
+    width: 14vw;
+    height: 3px;
+    background-color: var(--LightGrey);
+  }
+  
+  
+  .search-view-card .date{
+    margin-top: 36px;
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  
+  .search-view-card .time{
+    margin: 4px 0;
+    font-size: .9rem;
+  }
+  
+  
+  .search-view-card .day-type{
+    margin: 4px 0;
+    font-size: .9rem;
+  }
+  
+  
+  .search-view-card .city{
+    margin: 56px 0;
+    font-size: 2rem;
+  }
+  
